@@ -1,0 +1,183 @@
+/* CSS Document */
+html,body{height:100%; margin:0; padding: 0;}
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;font-weight:normal;height: auto;list-style:none;}
+header,footer,section,article,aside,title,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th,label{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary,img{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%; font-weight:normal;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer; color:#666;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:14px/1.5 PingFang SC,"Microsoft YaHei",arial,\5b8b\4f53;color:#666;outline:0; border-width:0;}
+body{background:#f2f3f5; font-weight:normal;}
+img{width: 100%; height:100%; outline: none; display: block;}
+a{ color: #252525;}
+a,a:hover{font-weight:normal;}
+a:hover{cursor: pointer; color: #2c62b5;}
+
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.cyel{color:#ff8859;}
+.blue{color: #008bbf;}
+.red{color:#ff0000;}
+.black{color:#000;}
+.c9{color:#999;}
+.c3{color:#333;}
+/*CLEARFIX
+-------------------------------------------------------------- */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/*---------------------------------------------------*/
+.displayFlex{display: -webkit-flex; display: flex;}
+.flex1{flex: 1;}
+.wrap{ flex-wrap:wrap;}
+.alignCenter{justify-content:center;}
+.vCenter{align-items: center;}
+.vBottom{align-items: flex-end;}
+.alignTwo{justify-content:space-between;}
+.relative{ position:relative;}
+.exceed{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.index_container{margin:40px 0 70px 0;}
+.sizing{box-sizing: border-box;padding: .3rem;background: #fff;}
+body,html{background-color: #f0f0f0;} 
+.clamp2{
+	overflow:hidden; 
+
+text-overflow:ellipsis;
+
+display:-webkit-box; 
+
+-webkit-box-orient:vertical;
+
+-webkit-line-clamp:2; 
+}
+#app{height: 100%;}
+
+
+.mint-msgbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  background-color: #fff;
+  width: 85%;
+  border-radius: 3px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.mint-msgbox-header {
+  padding: 15px 0 0;
+}
+.mint-msgbox-content {
+  padding: 10px 20px 15px;
+  border-bottom: 1px solid #ddd;
+  min-height: 36px;
+  position: relative;
+}
+.mint-msgbox-input {
+  padding-top: 15px;
+}
+.mint-msgbox-input input {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 4px 5px;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+.mint-msgbox-input input.invalid {
+  border-color: #ff4949;
+}
+.mint-msgbox-input input.invalid:focus {
+  border-color: #ff4949;
+}
+.mint-msgbox-errormsg {
+  color: red;
+  font-size: 12px;
+  min-height: 18px;
+  margin-top: 2px;
+}
+.mint-msgbox-title {
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+.mint-msgbox-message {
+  color: #999;
+  margin: 0;
+  text-align: center;
+  line-height: 36px;
+}
+.mint-msgbox-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+}
+.mint-msgbox-btn {
+  line-height: 35px;
+  display: block;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0;
+  border: 0;
+}
+.mint-msgbox-btn:focus {
+  outline: none;
+}
+.mint-msgbox-btn:active {
+  background-color: #fff;
+}
+.mint-msgbox-cancel {
+  width: 50%;
+  border-right: 1px solid #ddd;
+}
+.mint-msgbox-cancel:active {
+  color: #000;
+}
+.mint-msgbox-confirm {
+  color: #26a2ff;
+  width: 50%;
+}
+.mint-msgbox-confirm:active {
+  color: #26a2ff;
+}
+.msgbox-bounce-enter {
+  opacity: 0;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(0.7);
+          transform: translate3d(-50%, -50%, 0) scale(0.7);
+}
+.msgbox-bounce-leave-active {
+  opacity: 0;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(0.9);
+          transform: translate3d(-50%, -50%, 0) scale(0.9);
+}
+
+
+
+// WEBPACK FOOTER //
+// webpack:///packages/message-box/src/message-box.vue
